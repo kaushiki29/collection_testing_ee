@@ -1,0 +1,10 @@
+---
+- name: demo playbook run
+  hosts: localhost
+  become: true
+  tasks:
+    - name: Gather information about all vpn connections
+      community.aws.ec2_vpc_vpn_info:
+        access_key: AKIAXK6OWJO2BR4JD6M3
+        secret_key: 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
+        region: ap-south-1
